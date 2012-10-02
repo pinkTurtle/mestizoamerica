@@ -290,16 +290,18 @@ HEADER
 }
 #site-logo {
 	position: absolute;
-	top: 30px;
+	top: 15px;
 }
 #site-logo a {
+	background: url(images/ma_logo_header.png) no-repeat;
 	font: bold 190%/110% Arial, Helvetica, sans-serif;
-	color: #fff;
+	color: transparent;
 	text-decoration: none;
-	padding-bottom: 2px;
+	padding-bottom: 60px;
+	padding-left: 170px;
 }
 #site-description {
-	color: #ddd;
+	color: transparent;
 	position: absolute;
 	top: 70px;
 	font: italic 100%/120% Georgia, "Times New Roman", Times, serif;

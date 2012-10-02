@@ -30,10 +30,10 @@ PANEL BACKGROUND STYLES
 HEADER
 *************************************************************************************/
 #site-logo a {
-	color: #000;
+	color: trasparent;
 }
 #site-description {
-	color: #666;
+	color: trasparent;
 }
 
 /* social widget */
