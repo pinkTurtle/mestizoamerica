@@ -47,7 +47,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 GENERAL STYLING
 *************************************************************************************/
 body {
-	background: #0d1424 url(images/body-bg.jpg) no-repeat center top;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffdd66), to(#ffdd44));
+  background: -moz-linear-gradient(top, #ffdd66, #ffdd44);
+  background: linear-gradient(-90deg, #ffdd66, #ffdd44);
 	font: .81em/150% "Lucida Grande", Arial, "Lucida Sans Unicode", sans-serif;
 	color: #666;
 }
