@@ -669,12 +669,12 @@ input[type="submit"].small {
 }
 header {
   background-color: #c1e3e7;
-}
-header .site-header {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
+}
+header .site-header {
   height: 380px;
   padding: 0;
   display: inline-block;
@@ -732,13 +732,14 @@ nav .main-navigation {
   position: relative;
 }
 nav .main-navigation ul.nav-menu {
+  background-image: url("images/nav.jpg");
   padding: 0;
   margin: 0;
-  height: 30px;
+  height: 36px;
 }
 nav .main-navigation ul.nav-menu li {
   float: left;
-  width: 12%;
+  width: 13%;
 }
 nav .main-navigation ul.nav-menu li .nav-orange {
   background-color: #e94e17;
@@ -758,20 +759,12 @@ nav .main-navigation ul.nav-menu li a {
   text-align: center;
   padding: 0 15px;
 }
-nav .main-navigation ul.nav-menu li a.current-menu-item a,
 nav .main-navigation ul.nav-menu li a:hover {
   background: #6f6f6f;
   border-top: solid 6px #c6c6c6;
   line-height: 30px;
   color: #fff;
   font-style: normal;
-}
-nav .bottom {
-  background: #31b404;
-  float: left;
-  width: 10%;
-  height: 36px;
-  margin-top: -30px;
 }
 .nav-footer {
   include: nav;
