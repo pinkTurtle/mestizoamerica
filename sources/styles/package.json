@@ -1,0 +1,11 @@
+{
+  "name": "bsapr",
+  "version": "1.0.0",
+  "description": "BSAPR",
+  "dependencies": {},
+  "devDependencies": {
+    "stylus": "*",
+    "nib": "*"
+  },
+  "main": "style"
+}
