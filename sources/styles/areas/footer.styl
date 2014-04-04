@@ -1,22 +1,63 @@
 .site-footer 
   background: #BE1622
-  height: 200px
-  .logo
-    background: url("images/logo-MA.jpg") no-repeat
-    margin: 0
-    width: 100px 
-    height: 100px
-    float: left
-  .site-info 
-    .content-footer
-      .title
-        width: 30%
-        font-size:26px
-        color: #DF9D90        
-      p
-        font-size:11px
-        line-height: 18px
-        float:right
-        color: #DF9D90
-       
-      
+  .content
+    background: #BE1622 
+    height: 200px
+    >div
+      float: left
+      width: 33.333%
+      margin-top: 20px
+      padding-left: 20px
+      &.columna-1
+        padding: 0
+        .logo
+          background: url("images/logo-MA-footer.png") no-repeat 0 0
+          margin: 0 15px 20px 0
+          width: 100px 
+          height: 69px
+          float: left
+        .site-menu
+          .main-navigation
+            .nav-menu
+              line-height: 10px
+              margin: 30px 0 0 0
+              li
+                display: inline-block
+                :after
+                  content: "|"
+                  margin: 0 5px
+                a
+                  color: white
+                  font-family: arial
+                  font-size: 10px
+                  
+        .social-menu
+          display: inline-block
+          float: left         
+          margin-left: 115px
+          
+      &.columna-2 
+      &.columna-3
+        border-left: solid 1px white
+        height: 120px
+        h1
+          a         
+            color: #F78181
+            font-family: arial
+            font-size: 26px
+            text-transform: uppercase
+            margin-top: 30px
+        p
+          font-family: arial
+          font-size:15px
+          line-height: 18px
+          color: #DF9D90
+      &.columna-2 
+        .icon-plus 
+          width: 40px
+          height: 40px
+          &:before
+            padding: 10px 0 0 6px
+        p
+          font-weight: bold
+          text-transform: uppercase

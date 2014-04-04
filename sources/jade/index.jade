@@ -1,9 +1,5 @@
 ﻿extend layout
-
+block header
+  include areas/header/home
 block content
-  include areas/nav
-  include partials/slide
-  main
-    include areas/content/frontpage
-    include areas/sidebar/primary
-    include areas/sidebar/secondary
+  include areas/content/frontpage

@@ -1,9 +1,57 @@
-﻿.content-wrap
+﻿mixin article (copete)
+  .article
+    .article-wrapper
+      h2= copete
+      if block
+        block
+      else
+        img(src="#{img}")
+        h1 a(href="")= No content provided
+        p No content provided
+
+include ../../partials/slide
+.left-content
+  .icon-clip
   h2.title-principal 
     a(href="") Actividades
-  div.text-principal
-    p Ayuda escolar
-    p Clases de apoyo
-    p Taller de alfabetización
-    
-    
+  ul.text-principal
+    li
+      .icon-flecha
+      a(href="") Ayuda escolar primaria
+    li
+      .icon-flecha
+      a(href="") Clases de apoyo para alumnos secundarios y terciarios
+    li
+      .icon-flecha
+      a(href="") Taller de alfabetización de adultos
+  ul.text-secondary
+    li
+      .icon-flecha
+      a(href="") Ayuda escolar primaria
+    li
+      .icon-flecha
+      a(href="") Clases de apoyo para alumnos secundarios y terciarios
+    li
+      .icon-flecha
+      a(href="") Taller de alfabetización de adultos
+.right-content      
+  .icon-tips
+  h2.title-principal 
+    a(href="") Novedades
+  
+  +article("Avance de la obra")
+    img(src="")
+    h1
+      a(href="") Edificación de un nuevo salón
+    p Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.
+  +article("Avance de la obra")
+    img(src="")
+    h1
+      a(href="") Edificación de un nuevo salón
+    p Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.
+  +article("Avance de la obra")
+    img(src="")
+    h1
+      a(href="") Edificación de un nuevo salón
+    p Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.
+  

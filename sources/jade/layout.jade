@@ -3,6 +3,14 @@
 html
   include areas/head
   body
-    include areas/header
-    block content
+    header.site-header
+      block header
+    .site-main
+      .site-menu
+        include areas/nav
+      .site-content
+        div 
+          block content
+      .site-sidebar
+        include areas/sidebar/primary
     include areas/footer

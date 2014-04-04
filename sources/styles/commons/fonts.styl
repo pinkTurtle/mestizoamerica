@@ -1,63 +1,35 @@
 $regular = "adelle",serif;
 $links = "Arial", sans-serif
 
-@font-face {
-  font-family: 'bsapr';
-  src: url('fonts/bsapr.eot?14670151');
-  src: url('fonts/bsapr.eot?14670151#iefix') format('embedded-opentype'),
-       url('fonts/bsapr.woff?14670151') format('woff'),
-       url('fonts/bsapr.ttf?14670151') format('truetype'),
-       url('fonts/bsapr.svg?14670151#bsapr') format('svg');
+@font-face 
+  font-family: 'mestizoamerica';
+  src: url('./font/mestizoamerica.eot?49402452');
+  src: url('./font/mestizoamerica.eot?49402452#iefix') format('embedded-opentype'),
+       url('./font/mestizoamerica.woff?49402452') format('woff'),
+       url('./font/mestizoamerica.ttf?49402452') format('truetype'),
+       url('./font/mestizoamerica.svg?49402452#mestizoamerica') format('svg');
   font-weight: normal;
   font-style: normal;
-}
- 
-[class^="icon-"]:before, [class*=" icon-"]:before ,
-[class^="icon-"]:after, [class*=" icon-"]:after{
-  font-family: "bsapr";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
- 
 
-.icon-search:before { content: '\e802'; } /* '' */
-.icon-menu:before { content: '\e808'; } /* '' */
-.icon-down-open:before { content: '\e80c'; } /* '' */
-.icon-left-open:before { content: '\e809'; } /* '' */
-.icon-right-open:before { content: '\e80a'; } /* '' */
-.icon-up-open:before { content: '\e80b'; } /* '' */
-.icon-mail:before { content: '\e807'; } /* '' */
-.icon-left:before { content: '\e804'; } /* '' */
-.icon-right:before { content: '\e805'; } /* '' */
-.icon-up:before { content: '\e806'; } /* '' */
-.icon-facebook:before { content: '\e800'; } /* '' */
-.icon-twitter:before { content: '\e801'; } /* '' */
-.icon-down:before { content: '\e803'; } /* '' */
+
+.icon-twitter:before { content: '\e804'; } /* '' */
+.icon-right-circle-1:before { content: '\e80a'; } /* '' */
+.icon-right-circle:before { content: '\e80d'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-attach:before { content: '\e806'; } /* '' */
+.icon-plus-circle:before { content: '\e805'; } /* '' */
+.icon-twitter-2:before { content: '\e807'; } /* '' */
+.icon-facebook-1:before { content: '\e803'; } /* '' */
+.icon-book-1:before { content: '\e80f'; } /* '' */
+.icon-ok-circle:before { content: '\e810'; } /* '' */
+.icon-chat:before { content: '\e801'; } /* '' */
+ 
+icon(type)
+  font-family: "mestizoamerica"
+  font-style: normal
+  font-weight: normal
+  speak: none
+  content: type
 
 html,
 button,
@@ -65,3 +37,5 @@ input,
 select,
 textarea 
   font-family: $regular
+  
+  

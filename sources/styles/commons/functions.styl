@@ -11,33 +11,97 @@ clearfy()
     display: block
     width: 100%
     
+social-icon(caracter)
+  display: block
+  background: none
+  &:before
+    background: #0062AE
+    icon(caracter) 
+    border-radius: 90px
+    width: 30px
+    height: 30px
+    display: inline-block
+    color: white
+    font-size: 16px 
+    line-height: 30px
+    text-align: center
+    
 .social-menu
+  display: inline-block
+  float: right
+  clearfy ()
+  clear: both
+  margin-right: 15px
   li
+    float: left
     a
+      margin: 10px 5px 0 0
       &.fb
-        display: inline-block
-        width: 30px
-        height: 30px
-        border-radius:90px
-        background: #0062AE
-        float: left  
-        margin-top: 10px
+        social-icon('\e803')
       &.tw
-        display: inline-block
-        width: 30px
-        height: 30px
-        border-radius:90px
-        background: #0062AE
-        float: left  
-        margin-top: 10px
+        social-icon('\e804')
       &.blog
-        display: inline-block
-        width: 30px
-        height: 30px
-        border-radius:90px
-        background: #0062AE
-        float: left  
-        margin-top: 10px
+        social-icon('\e801')
 
-
+.icon-tips
+  &:before
+    font-family: "mestizoamerica"
+    font-size: 25px
+    content:'\e810'
+    display: inline-block
+    color: white
+    float: left 
+.icon-flecha
+  &:before
+    font-family: "mestizoamerica"
+    font-size: 20px
+    content:'\e80a'
+    display: inline-block
+    color: #666
+    float: left
+    background: white
+    width: 17px
+    height: 17px
+    border-radius: 90px
+    line-height: 17px    
+.icon-clip
+  &:before
+    font-family: "mestizoamerica"
+    font-size: 30px
+    content:'\e806'
+    display: inline-block
+    color: #95C120
+    float: left  
+.icon-plus  
+  background: white
+  width: 40px
+  height: 40px
+  border-radius: 90px
+  line-height: 20px
+  float: left
+  margin-right: 10px
+  &:before
+    font-family: "mestizoamerica"
+    font-size: 30px
+    content:'\e805'
+    display: inline-block
+    color: #95C120
+    
+.icon-mail    
+  width: 40px
+  height: 40px
+  border-radius:90px
+  background: white
+  text-align: center
+  padding-top: 8px
+  float: left
+  margin-right: 10px
+  &:before
+    font-family: "mestizoamerica"
+    font-size: 25px
+    content:'\e802'
+    display: inline-block
+    color: #666
+    margin: 0
+    
 

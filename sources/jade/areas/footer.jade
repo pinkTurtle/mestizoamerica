@@ -1,10 +1,23 @@
-﻿footer.footer.site-footer
-  div.logo Fundación Mestizo América
-  include nav-footer
-  div.donaciones
-    h2 Donaciones
-  div.contacto
-    p 
-      | Contactate con nosotros 
-      | al 0810-555-9968
+﻿footer.site-footer
+  .content
+    .columna-1 
+      .logo
+      include nav
+      ul.social-menu
+        li 
+          a(href="").fb
+        li
+          a(href="").tw
+        li
+          a(href="").blog
+    .columna-2 
+      h1
+        a(href="") Donaciones
+      .icon-plus  
+      p Vos podés <br> ayudarnos
+    .columna-3 
+      h1
+        a(href="") Contacto
+      .icon-mail
+      p Contactate con nosotros <br> al 0810-555-9968
     

@@ -1,43 +1,59 @@
-header
+.site-header
   background-color: #C1E3E7
-  wrap()
-  .site-header
-    clearfy()
+  .content
     height: 380px
     padding: 0
-    display: inline-block
-    background: transparent url(images/header.png) no-repeat  0 0
-    .logo
-      background-image:url(images/logo-MA.png) 
-      margin: 150px 0 0 0
-      width: 250px 
-      height: 173px
-      float: left
-    .header-destacado
-      width: 189px
-      height: 99px
-      margin: 150px 0 0 771px
-      background: transparent url(images/header-destacado.png) no-repeat  0 0
-      
-    .boton-donaciones
-      width: 100px
-      height: 50px
-      border-radius:10px
-      display: block
-      background: #E6332A
-      margin: 20px 0 0 860px
-      p
-        font-family: Arial
-        font-size: 15px
-        line-height: 15px
-        color: white
-        text-align: center
-        padding-top: 10px
-      
-    ul.social-menu
-      li
-        a 
-          margin-left: 10px
-          &.fb
-            margin-left: 850px
+    position: relative
+    .slide-header
+      background: transparent url(images/header.png) no-repeat  center center
+      height: 380px
+    .header-elements
+      height: 380px
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+      .logo
+        background-image:url(images/logo-MA.png) 
+        margin: 150px 0 0 0
+        width: 250px 
+        height: 173px
+        float: left
+      .header-destacado
+        width: auto
+        margin: 130px 20px 0 0
+        float:right
+        clear:right
+        p
+          font-family: Arial
+          font-size: 15px
+          line-height: 15px
+          color: #494949
+          text-align: left
+          text-align:left
+          &.right
+            text-align: right
+            font-size: 20px
+            line-height: 20px
+            color: #36A9E1
+           
+      .boton-donaciones
+        width: 115px
+        height: 50px
+        border-radius:10px
+        display: block
+        background: #E6332A
+        margin: 20px 20px 0 0
+        float:right
+        clear:right
+        p
+          font-family: Arial
+          font-size: 15px
+          line-height: 15px
+          color: white
+          text-align: center
+          padding-top: 10px
+
+
+                 
         
