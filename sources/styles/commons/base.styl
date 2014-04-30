@@ -17,7 +17,8 @@ h1, h2, h3, h4, h5, h6
   color: $text_color
   line-height: 1em
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 
-  font-weight: inherit;
+  font-weight: inherit
+  color: $text_color
 h1 
   font-size: 24px
   margin-bottom: 14px
@@ -38,16 +39,15 @@ p
 span
   color: $text_color
   margin: 0;
-p img 
-  margin: 0;
-p.lead 
-  font-size: 21px; line-height: 27px; color: #777;
+
 em 
   font-style: italic; 
 strong
-  font-weight: bold; color: #333;
+  font-weight: bold;
 small 
   font-size: 80%
+big
+  font-size: 120%
 iframe
   margin: 10px 0
 /*  Blockquotes  */
@@ -83,11 +83,7 @@ hr
   margin: 10px 0 30px
   height: 0
 
-#primary #content .item > div img.valign { 
-  height: 100%;
-  vertical-align: middle;
-  width: 0px;
-} 
+
 
 /* #Links
 ================================================== */
@@ -98,7 +94,7 @@ a:visited
   text-decoration: none
 a:hover
 a:focus
-  color: $links_hover
+  color: $links-hover
   text-decoration: none
 p a
 p a:visited 
@@ -127,9 +123,7 @@ li p { line-height: 21px; }
 /* #Images
 ================================================== */
 
-img.scale-with-grid 
-  max-width 100%
-  height auto 
+
 /* #buttons
 ================================================== */
 a.button,
@@ -297,17 +291,11 @@ input[type="submit"].small
 ================================================== */
 .alignleft
   float:left
+  margin: 0 10px 10px 0
 .aligncenter
   margin: 0 auto
   display:block
 .alignright
   float: right
-.remove-bottom
-  margin-bottom 0 !important
-.half-bottom
-  margin-bottom 10px !important
-.add-bottom 
-  margin-bottom 20px !important
-.clear
-  clear both
-  width 100%
+  margin: 0 0 10px 10px
+

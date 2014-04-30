@@ -1,0 +1,49 @@
+﻿mixin article (copete,img,titulo)
+  .article
+    .article-wrapper
+      .thumbnail
+        img(src="#{img}")
+        .icon-plus
+        a(href="") Leer mas
+      h2= copete
+      h1 
+        a(href="")= titulo
+      p
+        block
+
+.content
+  .icon-tips
+  h2.title-destacado 
+    a(href="") Novedades
+  include ../../partials/slide
+  .principal-content
+    +article("Avance de la obra", "#555", "Edificación de un nuevo salón")
+      Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.
+    +article("Avance de la obra", "#555", "Edificación de un nuevo salón")
+      Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.
+    +article("Avance de la obra", "#555", "Edificación de un nuevo salón")
+      Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.      
+  aside      
+    .box-title  
+      h2.title-links 
+        a(href="") Links de interés
+    .box-links 
+      ul
+        li
+          p Páginas de interés
+          a(href="") http://xxxxx.org/
+        li
+          p Páginas de interés
+          a(href="") http://xxxxx.org/
+        li
+          p Páginas de interés
+          a(href="") http://xxxxx.org/
+        li
+          p Páginas de interés
+          a(href="") http://xxxxx.org/
+        li
+          p Páginas de interés
+          a(href="") http://xxxxx.org/
+        li
+          p Páginas de interés
+          a(href="") http://xxxxx.org/    

@@ -1,0 +1,61 @@
+﻿.blue-box
+  position: relative
+  width: auto
+  height: 118px
+  background: $light-blue
+  &:before
+    background-image: url(images/pic-blue.jpg)
+    position: absolute
+    right: 0
+    top: 0
+    width: 27px
+    height: 30px
+    content:""
+  .icon-libro
+    position: absolute
+    top: 15px
+    left: 15px
+    &:before
+      font-family: "mestizoamerica"
+      font-size: 30px
+      content:'\e80f'
+      display: inline-block
+      color: $Xlight-blue
+      float: left
+  h2
+    position: absolute
+    top: 20px
+    left: 50px
+    font-size: 20px
+    color: $blue
+    font-weight: bold
+  .icon-flecha
+    &.item1
+      position: absolute
+      top: 50px
+      left: 40px
+    &.item2
+      position: absolute
+      top: 80px
+      left: 40px
+  p
+    font-size: 13px
+    color: $white
+    padding-left: 0
+    line-height: 17px
+    margin: 0
+    width: 70%
+    a
+      text-decoration: none
+      font-size: 13px
+      color: $white
+      &:hover
+        color: $Xlight-blue
+    &.item1  
+      position: absolute
+      top: 50px
+      left: 65px
+    &.item2
+      position: absolute
+      top: 80px
+      left: 65px

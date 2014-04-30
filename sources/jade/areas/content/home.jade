@@ -1,0 +1,44 @@
+﻿mixin article (copete,img,titulo)
+  .article
+    .article-wrapper
+      .thumbnail
+        img(src="#{img}")
+        .icon-plus
+        a(href="") Leer mas
+      h2= copete
+      h1 
+        a(href="")= titulo
+      p
+        block
+
+include ../../partials/slide
+.content
+  .left-content
+    .icon-clip
+    h2.title-destacado 
+      a(href="") Actividades
+    ul
+      li.icon-flecha
+        a(href="") Ayuda escolar primaria
+      li.icon-flecha
+        a(href="") Clases de apoyo para alumnos secundarios y terciarios
+      li.icon-flecha
+        a(href="") Taller de alfabetización de adultos
+    ul
+      li.icon-flecha
+        a(href="") Ayuda escolar primaria
+      li.icon-flecha
+        a(href="") Clases de apoyo para alumnos secundarios y terciarios
+      li.icon-flecha
+        a(href="") Taller de alfabetización de adultos
+  .right-content      
+    .icon-tips
+    h2.title-destacado 
+      a(href="") Novedades
+    
+    +article("Avance de la obra", "#555", "Edificación de un nuevo salón")
+      Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.
+    +article("Avance de la obra", "#555", "Edificación de un nuevo salón")
+      Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.
+    +article("Avance de la obra", "#555", "Edificación de un nuevo salón")
+      Con la construcción se intenta dotar a la biblioteca de un espacio cómodo para la realización de las diferentes actividades que se generan con la puesta en marcha del plan CCI y CDI.

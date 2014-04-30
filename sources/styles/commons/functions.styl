@@ -29,7 +29,6 @@ social-icon(caracter)
 .social-menu
   display: inline-block
   float: right
-  clearfy ()
   clear: both
   margin-right: 15px
   li
@@ -42,7 +41,9 @@ social-icon(caracter)
         social-icon('\e804')
       &.blog
         social-icon('\e801')
-
+      &:hover:before  
+        color: #2DAAE1
+        
 .icon-tips
   &:before
     font-family: "mestizoamerica"
@@ -60,10 +61,10 @@ social-icon(caracter)
     color: #666
     float: left
     background: white
-    width: 17px
-    height: 17px
-    border-radius: 90px
-    line-height: 17px    
+    width: 20px
+    height: 20px
+    border-radius: 10px
+    line-height: 20px    
 .icon-clip
   &:before
     font-family: "mestizoamerica"
@@ -73,17 +74,9 @@ social-icon(caracter)
     color: #95C120
     float: left  
 .icon-plus  
-  background: white
-  width: 40px
-  height: 40px
-  border-radius: 90px
-  line-height: 20px
-  float: left
-  margin-right: 10px
   &:before
     font-family: "mestizoamerica"
-    font-size: 30px
-    content:'\e805'
+    content:'\e800'
     display: inline-block
     color: #95C120
     
@@ -103,5 +96,57 @@ social-icon(caracter)
     display: inline-block
     color: #666
     margin: 0
+
+.article
+  margin: 20px 0 15px 0
+  border-bottom: 1px solid #666
+  padding-bottom: 20px
+  .article-wrapper
+    .thumbnail
+      float: left
+      height: 100px
+      background-color: #666
+      width: 80px
+      margin-right: 10px
+      img
+        width: 80px
+        height: 70px
+        background-color: #088A08
+      .icon-plus
+          background: white
+          width: 15px
+          height: 15px
+          border-radius: 7px
+          line-height: 17px
+          padding-left: 3px
+          float: left
+          font-size: 15px
+          margin: 0 5px
+      a 
+        font-size: 12px
+        color: white
+        &:hover
+          color: #04B404
+    h2  
+      font-style: italic
+      margin: 0
+      font-size: 11px
+      color: #2E2E2E
+      padding-bottom: 5px
     
+    h1
+      margin: 0
+      line-height: 20px
+      a
+        margin: 0
+        font-size: 20px
+        color: #2E2E2E
+        &:hover 
+          color: #088A08
+    p 
+      margin: 0
+      font-size: 11px
+      color: #2E2E2E
+      line-height: 14px
+      padding-left: 90px    
 
