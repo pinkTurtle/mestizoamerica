@@ -2,6 +2,20 @@
 data/*
 website/*
 !website/html/
+
+!website/wp-content/
+
+website/wp-content/*
+
+#!website/wp-content/plugins/
+
+!website/wp-content/themes/
+
+website/wp-content/themes/*
+
+!website/wp-content/themes/mestizo/
+
+# non used files
 *~
 .DS_Store
 .svn
